@@ -173,7 +173,7 @@ body {
 }
 
 .section__busca {
-    background-image: url('/images/banner.png');
+    background-image: url('../images/banner.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ select {
 }
 .section__newsletter {
     max-width: 100%;
-    background-image: url('/images/newsletter_background.jpg');
+    background-image: url('../images/newsletter_background.jpg');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
