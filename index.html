@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>BuyTickets</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+
+        <link rel="stylesheet" href="./styles/app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="#">
+                    <img
+                        src="./images/logo.svg"
+                        alt="BuyTickets"
+                        class="logo"
+                    />
+                </a>
+
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#busca">Pesquisar</a></li>
+                        <li><a href="#explorar">Explorar</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#proximos">Próximos</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Login/Cadastro</a></li>
+                        <li>
+                            <button class="button button--flat">
+                                Publicar Evento
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="section section__busca" id="busca">
+                <h1 class="section__title">
+                    Encontre o evento <span>perfeito</span> para você!
+                </h1>
+
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Pesquisar eventos"
+                        class="input input--search"
+                    />
+
+                    <input
+                        type="text"
+                        placeholder="Cidade"
+                        class="input input--city"
+                    />
+
+                    <select>
+                        <option value="all" selected>Todas as datas</option>
+                        <option value="tomorrow">Amanhã</option>
+                        <option value="weekend">Fim de Semana</option>
+                    </select>
+                </div>
+            </section>
+
+            <main class="main-content">
+                <section class="section section__explorar" id="explorar">
+                    <div class="section__header">
+                        <h2 class="section__title">Explorar</h2>
+                        <img src="./images/line.svg" alt="" />
+                    </div>
+                    <nav class="nav__explorar">
+                        <a href="#">
+                            <img src="./images/icon_shows.svg" alt="Shows" />
+                            Shows
+                        </a>
+                        <a href="#">
+                            <img src="./images/icon_theater.svg" alt="Teatro" />
+                            Teatro
+                        </a>
+                        <a href="#">
+                            <img src="./images/icon_cinema.svg" alt="Cinema" />
+                            Cinema
+                        </a>
+                    </nav>
+                </section>
+
+                <section class="section section__destaque" id="destaques">
+                    <div class="section__header">
+                        <h2 class="section__title">
+                            Eventos em Destaque
+                        </h2>
+                        <img src="./images/line.svg" alt="" />
+                    </div>
+
+                    <div class="main-carousel">
+                        <img
+                            src="./images/destaques/de_pernas_para_o_ar.jpg"
+                            alt="De Pernas Para o Ar 3"
+                            class="carousel-item"
+                        />
+                        <img
+                            src="./images/destaques/rock_in_rio.jpg"
+                            alt="Rock In Rio 2019"
+                            class="carousel-item"
+                        />
+                        <img
+                            src="./images/destaques/shazam.jpg"
+                            alt="Shazam!"
+                            class="carousel-item"
+                        />
+                        <img
+                            src="./images/destaques/ovo.jpg"
+                            alt="Cirque Du Soleil - Ovo"
+                            class="carousel-item"
+                        />
+                    </div>
+                </section>
+
+                <section class="section section__proximos" id="proximos">
+                    <div class="section__header">
+                        <h2 class="section__title">Próximos Eventos</h2>
+                        <img src="./images/line.svg" alt="" />
+                    </div>
+
+                    <div class="grid-container">
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/shows/rock_in_rio.jpg"
+                                        alt="Rock In Rio"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>Rock in Rio 2019</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/shows/shawn_mendes.jpg"
+                                        alt="Shawn Mendes"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>Shawn Mendes</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/cinema/a_maldicao_da_chorona.jpg"
+                                        alt="A Maldição da Chorona"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>A Maldição da Chorona</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/theater/o_fantasma_da_opera.jpg"
+                                        alt="O Fantasma da Ópera"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>O Fantasma da Ópera</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/cinema/after.jpg"
+                                        alt="After"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>After</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a href="#">
+                            <article>
+                                <figure class="fig-grid">
+                                    <img
+                                        class="img-grid"
+                                        src="images/shows/sandy_e_junior.jpeg"
+                                        alt="Sandy e Junior"
+                                    />
+                                </figure>
+                                <div class="info">
+                                    <strong>08<span>/</span>SET</strong>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >access_time</i
+                                        >
+                                        <span>21h</span>
+                                    </div>
+
+                                    <div class="info-item">
+                                        <i class="material-icons"
+                                            >location_on</i
+                                        >
+                                        <span>Rio de Janeiro</span>
+                                    </div>
+                                </div>
+                                <div class="sinopse">
+                                    <h3>Sandy e Junior</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eum maiores aspernatur
+                                        sed, molestiae dolorum totam!
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="section section__newsletter">
+                    <div class="section__content">
+                        <div class="section__header">
+                            <h2 class="section__title">
+                                Assine nossa <span>newsletter</span>
+                            </h2>
+                        </div>
+
+                        <p>
+                            Descubra eventos ocorrendo na sua cidade em primeira
+                            mão, direto no seu inbox.
+                        </p>
+
+                        <form>
+                            <input
+                                type="text"
+                                placeholder="Seu e-mail"
+                                class="input"
+                            />
+
+                            <button
+                                type="submit"
+                                class="button button--primary"
+                            >
+                                Assinar Newsletter
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__content">
+                    <div>
+                        <img
+                            src="./images/logo_footer.svg"
+                            alt="BuyTickets"
+                            class="logo"
+                        />
+
+                        <span class="copyright">&copy; COPYRIGHT 2019</span>
+
+                        <span class="footer__title">Siga-nos</span>
+                        <ul class="social__links">
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./images/social_icons/facebook.svg"
+                                        alt="Facebook"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./images/social_icons/twitter.svg"
+                                        alt="Twitter"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./images/social_icons/instagram.svg"
+                                        alt="Instagram"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="./images/social_icons/youtube.svg"
+                                        alt="Youtube"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="footer__title">BuyTickets</span>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Sobre
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Trabalhe Conosco
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="footer__title">Encontre Eventos</span>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#">
+                                    São Paulo
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Belo Horizonte
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Rio de Janeiro
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Recife
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Goiânia
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Porto Alegre
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Florianópolis
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Salvador
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Salvador
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="footer__title">Publique seu evento</span>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#">
+                                    Show
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Teatro
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    Cinema
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="footer__title">Ajuda</span>
+                        <ul class="footer__list">
+                            <li class="footer__items">
+                                <a href="#">
+                                    Central de Ajuda
+                                </a>
+                            </li>
+                            <li class="footer__items">
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
