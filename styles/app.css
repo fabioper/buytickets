@@ -433,6 +433,10 @@ select {
     align-items: center;
 }
 
+.info-item:first-of-type {
+    margin: 0 1rem 0 auto;
+}
+
 .info strong {
     font-size: 2.4rem;
 }
