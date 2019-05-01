@@ -183,7 +183,7 @@ body {
 }
 
 .section__busca .section__title {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     text-align: center;
     color: #fff;
     margin-top: 3rem;
@@ -394,9 +394,9 @@ select {
     display: grid;
     width: 100%;
     max-width: 100%;
-    grid-template-columns: repeat(3, calc(calc(100% - 8rem) / 3));
+    grid-template-columns: repeat(3, calc(calc(100% - 12rem) / 3));
     grid-template-rows: repeat(3, auto);
-    grid-gap: 4rem;
+    grid-gap: 6rem;
 }
 
 .grid-container a {
