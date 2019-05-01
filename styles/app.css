@@ -379,6 +379,17 @@ select {
     max-width: 1250px;
 }
 
+.section__proximos .section__header a {
+    margin-left: auto;
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.section__proximos .section__header a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
 .grid-container {
     display: grid;
     width: 100%;
