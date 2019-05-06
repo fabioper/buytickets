@@ -242,6 +242,12 @@ select {
     color: #b7b7b7;
     font-style: italic;
 }
+
+.section__busca .button {
+    flex-shrink: 0;
+    padding: 2.4rem 5rem;
+    font-weight: bold;
+}
 /* --------------- /section --------------- */
 
 /* --------------- main --------------- */
